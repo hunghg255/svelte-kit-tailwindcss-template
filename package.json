@@ -1,6 +1,6 @@
 {
 	"name": "svelte-template",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -13,8 +13,8 @@
 		"test:integration": "playwright test",
 		"test:unit": "vitest",
 		"verify-commit": "verify-commit-msg",
-    "postinstall": "git-scm-hooks",
-    "release": "bumpp -r"
+		"postinstall": "git-scm-hooks",
+		"release": "bumpp -r"
 	},
 	"devDependencies": {
 		"@fontsource/fira-mono": "^4.5.10",
@@ -44,14 +44,14 @@
 		"vitest": "^0.32.4"
 	},
 	"type": "module",
-  "browserslist": [
-    ">0.3%",
-    "not ie 11",
-    "not dead",
-    "not op_mini all"
-  ],
-  "git-hooks": {
-    "pre-commit": "npm run lint",
-    "commit-msg": "npm run verify-commit"
-  }
+	"browserslist": [
+		">0.3%",
+		"not ie 11",
+		"not dead",
+		"not op_mini all"
+	],
+	"git-hooks": {
+		"pre-commit": "npm run lint",
+		"commit-msg": "npm run verify-commit"
+	}
 }
